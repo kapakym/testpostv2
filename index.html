@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Посылка из дома</title>
+    <link rel="icon" href="/favicon-32x32.png" />
+    <link rel="manifest" href="/manifest.json">
+    <script type="module" crossorigin src="/assets/index-IZdYjHXN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CVPatIr0.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+        console.log("Will the service worker register?");
+        navigator.serviceWorker.register('service-worker.js')
+            .then(function(reg){
+                console.log("Yes, it did.");
+            }).catch(function(err) {
+            console.log("No it didn't. This happened:", err)
+        });
+    }
+</script>
+</html>
